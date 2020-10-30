@@ -1,0 +1,31 @@
+Donovan Griego
+10-30-2020
+Lab 7
+
+Purpose: To practice creating and using a makefile. To practice using arrays and structures.
+
+Conclusions:
+
+a) What I learned from this lab:
+I learned how to utilize structures and arrays to calculate things such as the 
+number of sundays that land on the first of the month between given years. I also 
+learn how to use fgets and sscanf to take and interpret input from the user. I 
+also learned how to make a makefile and use it to compile all of my programs 
+quickly and easily.
+
+b) How did the pair programming help/hinder the lab:
+The pair programming helped me a lot when it came to the makefile. Before the 
+pair programming I had no idea what is was and how to use it. Afterwards I 
+realized how useful it was to have one.
+
+c) Issues and how I fixed them (bug report):
+I had a lot of trouble with the zombies program at first. I was trying to modify 
+the strucure I passed into my function but found that it had not been modified 
+outside of my function. I was puzzled with why I was getting garbage values before 
+I realized this. I fixed it by passing in a pointer to the structure I was trying 
+to modify.
+
+d) Improvements that can be made:
+In the future, I can improve my programs by making them more efficient overall.
+For example, I would like to separate my zombie log program into more functions 
+than were listed in the requirements.
