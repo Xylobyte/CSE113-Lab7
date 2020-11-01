@@ -1,0 +1,34 @@
+Script started on 2020-11-01 01:58:41-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="168" LINES="14"]
+]0;dxgriego@Parallels: ~/cse113/lab7[01;32mdxgriego@Parallels[00m:[01;34m~/cse113/lab7[00m$ valgrind --leak-check=yes [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake dynamic 
+clang -O2 -c str.c
+clang -O2 dynamic.c str.o -o dynamic 
+]0;dxgriego@Parallels: ~/cse113/lab7[01;32mdxgriego@Parallels[00m:[01;34m~/cse113/lab7[00m$ valgrind --leak-check=yes ./dynamic 
+==21530== Memcheck, a memory error detector
+==21530== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==21530== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==21530== Command: ./dynamic
+==21530== 
+u = "c run, c run unix, run unix run"
+u = "c run, c run unix, run unix run, go c, go!"
+==21530== 
+==21530== HEAP SUMMARY:
+==21530==     in use at exit: 43 bytes in 1 blocks
+==21530==   total heap usage: 2 allocs, 1 frees, 1,067 bytes allocated
+==21530== 
+==21530== 43 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==21530==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21530==    by 0x401183: main (in /home/dxgriego/cse113/lab7/dynamic)
+==21530== 
+==21530== LEAK SUMMARY:
+==21530==    definitely lost: 43 bytes in 1 blocks
+==21530==    indirectly lost: 0 bytes in 0 blocks
+==21530==      possibly lost: 0 bytes in 0 blocks
+==21530==    still reachable: 0 bytes in 0 blocks
+==21530==         suppressed: 0 bytes in 0 blocks
+==21530== 
+==21530== For lists of detected and suppressed errors, rerun with: -s
+==21530== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+]0;dxgriego@Parallels: ~/cse113/lab7[01;32mdxgriego@Parallels[00m:[01;34m~/cse113/lab7[00m$ exit
+exit
+
+Script done on 2020-11-01 01:59:24-06:00 [COMMAND_EXIT_CODE="0"]
