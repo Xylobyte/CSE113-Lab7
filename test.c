@@ -4,12 +4,12 @@
 #include <string.h>
 
 #define STRLEN
-/* #define PSTRNCPY */
-/* #define PSTRCAT */
-/* #define PSTRNCMP */
-/* #define PINDEX */
-/* #define PSQUEEZE */
-/* #define PREVERSE */
+//#define PSTRNCPY
+//#define PSTRCAT
+//#define PSTRNCMP
+//#define PINDEX
+//#define PSQUEEZE
+#define PREVERSE
 
 
 #define SIZE 100
