@@ -1,3 +1,9 @@
+/**
+ * @file dynamic_strings.c
+ * @author Donovan Griego
+ * @brief Same as dynamic.c but uses library function calls.
+ * @date 2020-11-01
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

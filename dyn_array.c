@@ -1,3 +1,9 @@
+/**
+ * @file dyn_array.c
+ * @author Donovan Griego
+ * @brief Reads in array dynamically and finds the min, max, and average
+ * @date 2020-11-01
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #define SIZE 11
